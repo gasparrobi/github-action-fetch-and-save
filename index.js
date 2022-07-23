@@ -22,7 +22,6 @@ const fetchAndSaveFile = async (url, path = '', fileName = 'test.json') => {
 };
 
 try {
-  const nameToGreet = core.getInput('who-to-greet');
   const url = core.getInput('fetch-url');
   const path = core.getInput('file-path') || '';
   const fileName = core.getInput('file-name');
