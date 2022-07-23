@@ -1,0 +1,16 @@
+name: 'Hello World'
+description: 'Greet someone and record the time'
+inputs:
+  fetch-url:
+    description: 'url to fetch, duh'
+    required: true
+  file-path:
+    description: 'where to save (path/to/directory) if empty it is saved to root'
+    required: false
+  file-name:
+    description: 'file name with extension. eg: savedFile.json'
+    required: true
+    default: 'test.json'
+runs:
+  using: 'node16'
+  main: 'index.js'
