@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     name: fetch and save json data
     steps:
+      - uses: actions/checkout@v2
+
       - name: fetch and save json data
         uses: gasparrobi/github-action-fetch-and-save@master
         id: hello
